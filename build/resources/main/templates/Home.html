@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/triangle" method="get">
+    <p>
+        <text> First Side </text>
+        <input style='margin-left:40px' th:value="${firstSide}" name="firstSide" type="text" size="15">
+    </p>
+    <p>
+        <text> Second Side </text>
+        <input style='margin-left:23px' th:value="${secondSide}" name="secondSide" type="text" size="15">
+    </p>
+    <p>
+        <text> Third Side </text>
+        <input style='margin-left:35px' th:value="${thirdSide}" name="thirdSide" type="text" size="15">
+    </p>
+    <input style='margin-top:30px' th:value="${area}" name="area" type="text" size="15">
+    <input th:value="${perimeter}" name="perimeter" type="text" size="15">
+    <p>
+        <button id="sq" name="areaFlag" type="submit" value="true" >Square</button>
+        <button id="pr" name="perimeterFlag" type="submit" value="true" style='margin-left:84px'>Perimeter</button>
+    </p>
+</body>
+</html></html>
